@@ -16,7 +16,7 @@ module "app_sg" {
   source = "terraform-aws-modules/security-group/aws"
 
   name        = "App-SG"
-  description = "Security group para nossa instancia da Aplicação"
+  description = "Security group para nossa instancia da Aplicacao"
   vpc_id      = data.aws_vpc.infra-bootcamp-prod-vpc.id
   ingress_with_cidr_blocks = [
     {
